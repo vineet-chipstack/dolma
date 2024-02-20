@@ -9,7 +9,7 @@ streams:
       max_size_in_bytes: 1_000_000_000
     filter:
       include:
-        - "$.attributes[?(@.chipdesign_keywords__chipdesign_keywords__document[0][2] == 1)]"
+        - "$.attributes[?(@.chipdesign_keywords__chipdesign_keywords__document[0][2] > 0)]"
 work_dir:
   input: "/dolma-dataset-sample/data/outputs/chipdesign/input"
   output: "/dolma-dataset-sample/data/outputs/chipdesign/output"

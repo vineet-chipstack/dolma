@@ -12,13 +12,17 @@ cur_path = os.path.dirname(os.path.realpath(__file__))
 def keywords_in_text(keywords, text):
     # Compile a regular expression pattern from the list of keywords
     pattern = re.compile(r'\b(?:' + '|'.join(re.escape(word)
-                     for word in keywords) + r')\b', flags=re.IGNORECASE)
+                         for word in keywords) + r')\b', flags=re.IGNORECASE)
 
-    # Search for the pattern in the text
-    matches = pattern.findall(text)
+    # # Search for the pattern in the text
+    # matches = pattern.findall(text)
+
+    # Finding all matches and their indices
+    matches = [(match.group(), match.start())
+               for match in pattern.finditer(text)]
 
     # Return True if any match is found, otherwise False
-    return bool(matches)
+    return matches
 
 
 def read_keywords_from_file(file_path):
@@ -34,15 +38,23 @@ def read_keywords_from_file(file_path):
 keywords = read_keywords_from_file(os.path.join(cur_path, 'keywords.txt'))
 
 
-#@add_tagger("chipdesign_keywords")
+# @add_tagger("chipdesign_keywords")
 @TaggerRegistry.add("chipdesign_keywords")
 class ChipDesignKeywordTagger(BaseTagger):
     def predict(self, doc: Document) -> DocResult:
         # first, we generate a random number
-        score = int(keywords_in_text(keywords, doc.text))
+        matches = keywords_in_text(keywords, doc.text)
+        score = len(matches)
 
         # we assign the random score to a span that
         # covers the entire document
+        for m in matches:
+            span = Span(
+                start=m[1],
+                end=m[1] + len(m[0]),
+                type=f"{m[0]}",
+                score=1
+            )
         span = Span(
             start=0,
             end=len(doc.text),
@@ -58,7 +70,7 @@ allowed_extensions = [".v", ".sv", ".vh", ".svh", ".vhd", ".vhdl",
                       ".vlg", ".vlog", ".vqm", ".vq", ".vqf", ".vqif", ".vqtf", ".vst"]
 
 
-#@add_tagger("chipdesign_type")
+# @add_tagger("chipdesign_type")
 @TaggerRegistry.add("chipdesign_type")
 class ChipDesignTypeTagger(BaseTagger):
     def predict(self, doc: Document) -> DocResult:
