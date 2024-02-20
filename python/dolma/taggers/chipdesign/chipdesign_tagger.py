@@ -46,6 +46,7 @@ class ChipDesignKeywordTagger(BaseTagger):
         matches = keywords_in_text(keywords, doc.text)
         score = len(matches)
 
+        spans = []
         # we assign the random score to a span that
         # covers the entire document
         for m in matches:
@@ -55,15 +56,17 @@ class ChipDesignKeywordTagger(BaseTagger):
                 type=f"{m[0]}",
                 score=1
             )
+            spans.append(span)
         span = Span(
             start=0,
             end=len(doc.text),
             type="document",
             score=score
         )
+        spans.append(span)
 
         # we return the span wrapped in a DocResult object
-        return DocResult(doc=doc, spans=[span])
+        return DocResult(doc=doc, spans=spans)
 
 
 allowed_extensions = [".v", ".sv", ".vh", ".svh", ".vhd", ".vhdl",
