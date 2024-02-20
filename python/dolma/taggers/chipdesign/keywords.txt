@@ -1,0 +1,227 @@
+Computer Architecture
+High Performance Computing
+Microprocessors
+Transistors
+Semiconductors
+Microarchitecture
+Verilog
+SystemVerilog
+ASIC
+Application-Specific Integrated Circuit
+FPGA
+Field-Programmable Gate Array
+SoC
+System on Chip
+VLSI
+Very Large Scale Integration
+CMOS
+Complementary Metal-Oxide-Semiconductor
+FinFET
+Fin Field-Effect Transistor
+EDA
+Electronic Design Automation
+RTL
+Register-Transfer Level
+GDSII
+Graphic Design System II
+PDK
+Process Design Kit
+LVS
+Layout vs. Schematic
+DRC
+Design Rule Checking
+SDF
+Standard Delay Format
+SPICE
+Simulation Program with Integrated Circuit Emphasis
+MEMS
+Microelectromechanical Systems
+Power Management ICs
+Digital Signal Processing
+Analog Circuit Design
+RFIC
+Radio Frequency Integrated Circuit
+Mixed-Signal Circuit Design
+Photolithography
+Silicon Photonics
+Quantum Computing
+Nanotechnology
+Thermal Management in ICs
+Embedded Systems
+Logic Synthesis
+Timing Analysis
+Physical Design
+Chip Fabrication
+Yield Optimization
+Semiconductor Materials
+Silicon
+Germanium
+Gallium Arsenide
+Moore's Law
+Interconnect Technology
+Packaging Technology
+Chip Testing and Verification
+IP Cores
+Machine Learning for Chip Design
+Hardware Description Language
+HDL
+Synthesizable Code
+Power Consumption and Efficiency
+Clock Gating
+Dynamic Voltage and Frequency Scaling
+DVFS
+Leakage Current
+Process Variability
+Electromigration
+Charge-Coupled Device
+CCD
+Static Random-Access Memory
+SRAM
+Dynamic Random-Access Memory
+DRAM
+Non-Volatile Memory
+Flash
+EEPROM
+BCD Technology
+Bipolar-CMOS-DMOS Technology
+Silicon on Insulator
+SOI
+Heterogeneous Integration
+IC Packaging
+Wafer-Level Packaging
+WLP
+Multi-Chip Module
+MCM
+3D ICs
+Through-Silicon Via
+TSV
+Silicon Interposer
+Chiplets
+Die Stacking
+EUV Lithography
+Extreme Ultraviolet
+Deep Ultraviolet Lithography
+DUV Lithography
+Multi-Patterning Techniques
+Directed Self-Assembly
+DSA
+Atomic Layer Deposition
+ALD
+Chemical Vapor Deposition
+CVD
+Plasma-Enhanced CVD
+PECVD
+Physical Vapor Deposition
+PVD
+Sputtering
+Electron Beam Lithography
+Ion Implantation
+Wet Etching
+Dry Etching
+Chemical Mechanical Polishing
+CMP
+Rapid Thermal Processing
+RTP
+Oxidation
+Diffusion
+Metrology and Inspection
+Failure Analysis
+Reliability Testing
+Burn-In Testing
+Electromagnetic Interference
+EMI
+Signal Integrity
+Power Integrity
+Low-Power Design Techniques
+Energy Harvesting ICs
+Gallium Nitride Electronics
+GaN Electronics
+Silicon Carbide Electronics
+SiC Electronics
+Organic Semiconductors
+Flexible Electronics
+Bioelectronics
+Neuromorphic Computing
+Spintronics
+2D Materials
+Graphene
+MoS2
+Quantum Dots
+Single-Electron Transistors
+Carbon Nanotubes
+CNT
+Molecular Electronics
+Optical Computing
+Photonic Integrated Circuits
+Optoelectronics
+Solar Cells
+Light Emitting Diodes
+LEDs
+OLED Display Technology
+Organic LED Display Technology
+MEMristors
+Phase-Change Memory
+PCM
+Resistive Random-Access Memory
+ReRAM
+Ferroelectric RAM
+FeRAM
+Magnetic RAM
+MRAM
+Spin-Transfer Torque MRAM
+STT-MRAM
+Hardware Security
+Cryptographic Hardware
+Side-Channel Attack Mitigation
+Secure Boot for SoCs
+Trusted Execution Environment
+Hardware Trojans
+IC Reverse Engineering
+Semiconductor Supply Chain
+Chip Scalability
+Thermal Interface Materials
+TIM
+Heat Sinks and Cooling Solutions
+Underfill Materials
+Wire Bonding
+Flip-Chip Technology
+Embedded Multi-die Interconnect Bridge
+EMIB
+Silicon Photonics for Data Centers
+High-Bandwidth Memory
+HBM
+GDDR Memory
+Graphics Double Data Rate Memory
+PCI Express Standards
+PCIe Standards
+CXL
+Compute Express Link
+Network-on-Chip
+NoC
+SerDes
+Serializer/Deserializer
+Clock Distribution Networks
+JTAG
+Joint Test Action Group
+Boundary Scan
+Electronic System Level Design
+ESL
+Transaction-Level Modeling
+TLM
+Hardware Emulation
+FPGA Prototyping
+Post-Silicon Validation
+Design for Testability
+DFT
+Built-In Self-Test
+BIST
+Automatic Test Pattern Generation
+ATPG
+Scan Chains
+Soft Errors
+Error Correction Codes
+ECC
+Low-Dropout Regulators
+LDOs
+Switched-Capacitor Converters
+DC-DC Converters
