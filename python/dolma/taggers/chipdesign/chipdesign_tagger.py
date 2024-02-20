@@ -53,7 +53,7 @@ class ChipDesignKeywordTagger(BaseTagger):
             span = Span(
                 start=m[1],
                 end=m[1] + len(m[0]),
-                type=f"{m[0]}",
+                type=f"k{m[0]}",
                 score=1
             )
             spans.append(span)
