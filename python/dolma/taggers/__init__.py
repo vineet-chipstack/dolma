@@ -1,6 +1,7 @@
 from . import (
     c4,
     code,
+    chipdesign,
     gopher,
     jigsaw,
     language,
