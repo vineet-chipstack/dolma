@@ -1,0 +1,17 @@
+streams:
+  - name: chipdesign
+    documents:
+      - /dolma-dataset-sample/data/dolma/documents/*.gz
+    attributes:
+      - chipdesign_keywords
+    output:
+      path: /dolma-dataset-sample/data/outputs/chipdesign/documents
+      max_size_in_bytes: 1_000_000_000
+    filter:
+      include:
+        - "$.attributes[?(@.chipdesign_keywords__chipdesign_keywords__document[0][2] == 1)]"
+work_dir:
+  input: "/dolma-dataset-sample/data/outputs/chipdesign/input"
+  output: "/dolma-dataset-sample/data/outputs/chipdesign/output"
+processes: 128
+dryrun: false

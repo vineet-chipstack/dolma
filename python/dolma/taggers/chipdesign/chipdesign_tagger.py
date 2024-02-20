@@ -1,17 +1,18 @@
 import random
 
-from dolma.core.data_types import DocResult, Document, Span
-from dolma import add_tagger, BaseTagger
+from ...core.data_types import DocResult, Document, Span
+from ...core.taggers import BaseTagger
 import re
 import os
-from ..core.registry import TaggerRegistry
+from ...core.registry import TaggerRegistry
 
 cur_path = os.path.dirname(os.path.realpath(__file__))
 
 
 def keywords_in_text(keywords, text):
     # Compile a regular expression pattern from the list of keywords
-    pattern = re.compile('|'.join(keywords), flags=re.IGNORECASE)
+    pattern = re.compile(r'\b(?:' + '|'.join(re.escape(word)
+                     for word in keywords) + r')\b', flags=re.IGNORECASE)
 
     # Search for the pattern in the text
     matches = pattern.findall(text)
