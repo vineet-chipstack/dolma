@@ -12,7 +12,7 @@ cur_path = os.path.dirname(os.path.realpath(__file__))
 def keywords_in_text(keywords, text):
     # Compile a regular expression pattern from the list of keywords
     pattern = re.compile(r'\b(?:' + '|'.join(re.escape(word)
-                         for word in keywords) + r')\b', flags=re.IGNORECASE)
+                         for word in keywords) + r')\b')
 
     # # Search for the pattern in the text
     # matches = pattern.findall(text)
